@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html-email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <style>
+
+        /* ------------------------------------------------------------ reset */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+            border: none;
+            border-collapse: collapse;
+            font-family: sans-serif;
+            color: #000;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            font-weight: lighter;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        /* -------------------------------- layout and 12 columns grid system */
+
+        table {
+            width: 700px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        th {
+            width: 58px; /* 700 / 12 */
+            min-width: 58px; /* 700 / 12 */
+            max-width: 58px; /* 700 / 12 */
+        }
+
+        td {
+            padding: 0 15px;
+        }
+
+        /* ---------------------------------------------------------- helpers */
+
+        .hidden {
+            height: 0;
+            opacity: 0;
+            display: block;
+            margin: 0;
+        }
+
+        /* ------------------------------------------------------- typography */
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+<body>
+<main>
+    <p class="hidden">This is the text that will be displayed in the email description and is</p>
+
+    <table class="content">
+        <tbody>
+        <!-- creates a workable 12 columns grid system -->
+        <tr>
+            <th class="hidden">col-1</th>
+            <th class="hidden">col-2</th>
+            <th class="hidden">col-3</th>
+            <th class="hidden">col-4</th>
+            <th class="hidden">col-5</th>
+            <th class="hidden">col-6</th>
+            <th class="hidden">col-7</th>
+            <th class="hidden">col-8</th>
+            <th class="hidden">col-9</th>
+            <th class="hidden">col-10</th>
+            <th class="hidden">col-11</th>
+            <th class="hidden">col-12</th>
+        </tr>
+
+        <tr>
+            <td colspan="12">
+                <img src="https://www.fillmurray.com/700/400" alt="header">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12">
+                <h1>Headline</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12">
+                <p>
+                    Hello, <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci corporis dicta dolor dolorum, eligendi esse illo
+                    ipsa iure libero nostrum perspiciatis quidem ratione repudiandae,
+                    tempore temporibus, velit vitae. Ducimus, esse.
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12"><br><br></td>
+        </tr>
+
+        <tr>
+            <td colspan="6">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci corporis dicta dolor dolorum, eligendi esse illo
+                    ipsa iure libero nostrum perspiciatis quidem ratione repudiandae,
+                    tempore temporibus, velit vitae. Ducimus, esse.
+                </p>
+            </td>
+            <td colspan="6">
+                <img src="https://www.fillmurray.com/700/400" alt="image A">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="6">
+                <img src="https://www.fillmurray.com/700/400" alt="image B">
+            </td>
+            <td colspan="6">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci corporis dicta dolor dolorum, eligendi esse illo
+                    ipsa iure libero nostrum perspiciatis quidem ratione repudiandae,
+                    tempore temporibus, velit vitae. Ducimus, esse.
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci corporis dicta dolor dolorum, eligendi esse illo
+                    ipsa iure libero nostrum perspiciatis quidem ratione repudiandae,
+                    tempore temporibus, velit vitae. Ducimus, esse.
+                </p>
+
+                <ul>
+                    <li>Jet engine manufacturing,</li>
+                    <li>5 axis machining capabilities</li>
+                    <li>Individualized service solutions</li>
+                    <li>High accuracy grinding of large bearings</li>
+                    <li>Expanded TechCenter in Kentucky</li>
+                    <li>We would also be happy to introduce you to our new Aerospace Competence Center in Switzerland.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12">
+                <img src="https://www.fillmurray.com/700/400" alt="image C">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12">
+                <a href="#">Link A</a>
+                <span>|</span>
+                <a href="#">Link B</a>
+                <span>|</span>
+                <a href="#">Link C</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
