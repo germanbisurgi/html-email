@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "inline-css": "juice index.html output.html"
+    "inline-css": "juice src/index.html dist/output.html"
   },
   "devDependencies": {
     "juice": "^8.1.0"
