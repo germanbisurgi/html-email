@@ -1,4 +1,5 @@
 # html-email
+
 A template and a set of rules to write HTML emails
 
 ## Rules
@@ -11,6 +12,15 @@ A template and a set of rules to write HTML emails
 - To test how email clients render the page just open the page in a browser, `cmd` + `a`
 to select all, `cmd` + `c` to copy the selection and then `cmd` + `v` in the email body
 to paste the content.
+- When the page is ready is best to inline css to maximize compatibility with email renderers
+
+## Inline CSS
+
+    npm run inline-css
+    
+## Resources
+
+- https://www.npmjs.com/package/juice
 
 ## Screenshot
 
